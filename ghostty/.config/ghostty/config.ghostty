@@ -1,0 +1,35 @@
+# Based on github.com/vossenwout/pookie-dotfiles
+
+# --- Appearance ---
+theme = guts
+font-family = "Fira Code"
+font-size = 14
+background-opacity = 1
+background-blur = true
+title = " "
+
+# Cursor trail effect
+custom-shader = shaders/cursor.glsl
+
+# --- Behavior ---
+mouse-hide-while-typing = true
+clipboard-write = allow
+
+# --- Splits ---
+# Move between splits
+keybind = alt+h=goto_split:left
+keybind = alt+j=goto_split:bottom
+keybind = alt+k=goto_split:top
+keybind = alt+l=goto_split:right
+
+# Create splits
+keybind = alt+shift+h=new_split:left
+keybind = alt+shift+j=new_split:down
+keybind = alt+shift+k=new_split:up
+keybind = alt+shift+l=new_split:right
+
+# --- Keys sent to programs ---
+# Ctrl-[ acts as Escape
+keybind = ctrl+left_bracket=text:\x1b
+# Shift-Enter sends its own code (used by Claude Code and other TUIs for newlines)
+keybind = shift+enter=text:\x1b[13;2u
